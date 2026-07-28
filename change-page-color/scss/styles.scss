@@ -1,0 +1,71 @@
+@use "./var.scss";
+@use "./mixins.scss";
+
+html,
+body {
+    @include mixins.setBaseColor(--base-color, --font-color);
+
+    /* ITEMS 
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: var(--font-color) !important;
+        text-decoration: wavy !important;
+        background-color: inherit;
+    }
+
+    p {
+        background-color: inherit;
+        color: inherit;
+    }
+
+    a {
+        text-decoration: underline;
+        color: var(--font-color);
+        background-color: inherit;
+    }*/
+
+    /* CONTAINERS */
+    main {
+        @include mixins.setBaseColor(--base-color, --font-color);
+
+        div,
+        section {
+            @include mixins.setAccentColor(--accent-color);
+        }
+    }
+
+    div {
+        @include mixins.setBaseColor(--base-color, --font-color);
+    }
+
+    nav {
+        @include mixins.setAccentColor(--accent-color);
+    }
+
+    article {
+        @include mixins.setComponentColor(--button-color, --button-text-color);
+        border-radius: var(--radius) !important;
+    }
+
+    /* COMPONENTS */
+    button {
+        @include mixins.setButtonColor(--button-color, --button-text-color);
+        border-radius: var(--radius) !important;
+    }
+
+    ul,
+    ol,
+    input,
+    form {
+        @include mixins.setAccentColor(--accent-color);
+        border-radius: var(--radius);
+    }
+
+    code, pre {
+        @include mixins.setAccentColor(--accent-color);
+    }
+}

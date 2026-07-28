@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Change page color",
+  "version": "1.0",
+  "permissions": ["activeTab", "scripting"],
+  "description": "Allows user to change the current theme of a page based on color wheel.",
+  "action": {
+    "default_icon": {
+      "16": "images/color.png",
+      "32": "images/color.png",
+      "48": "images/color.png",
+      "128": "images/color.png"
+    }
+  },
+  "background": {
+    "service_worker": "scripts/background.js"
+  },
+  "icons": {
+    "16": "images/color.png",
+    "32": "images/color.png",
+    "48": "images/color.png",
+    "128": "images/color.png"
+  }
+}

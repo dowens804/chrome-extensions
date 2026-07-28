@@ -1,0 +1,176 @@
+:root {
+  --base-color: #D0B17A;
+  --accent-color: #F5FDC6;
+  --component-color: ;
+  --font-color: #000000;
+  --button-color: #285943;
+  --button-text-color: #ffffff;
+  --radius: 24px;
+}
+:root .theme {
+  --base-color: #D0B17A;
+}
+
+html,
+body {
+  background-color: var(--base-color) !important;
+}
+html h1,
+html h2,
+html h3,
+html h4,
+html h5,
+html h6,
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  color: var(--font-color) !important;
+  text-decoration: underline !important;
+}
+html > *:not(button),
+body > *:not(button) {
+  color: var(--font-color) !important;
+}
+html a,
+body a {
+  -webkit-text-decoration: wavy;
+          text-decoration: wavy;
+}
+html,
+body {
+  /* ITEMS 
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+      color: var(--font-color) !important;
+      text-decoration: wavy !important;
+      background-color: inherit;
+  }
+
+  p {
+      background-color: inherit;
+      color: inherit;
+  }
+
+  a {
+      text-decoration: underline;
+      color: var(--font-color);
+      background-color: inherit;
+  }*/
+  /* CONTAINERS */
+}
+html main,
+body main {
+  background-color: var(--base-color) !important;
+}
+html main h1,
+html main h2,
+html main h3,
+html main h4,
+html main h5,
+html main h6,
+body main h1,
+body main h2,
+body main h3,
+body main h4,
+body main h5,
+body main h6 {
+  color: var(--font-color) !important;
+  text-decoration: underline !important;
+}
+html main > *:not(button),
+body main > *:not(button) {
+  color: var(--font-color) !important;
+}
+html main a,
+body main a {
+  -webkit-text-decoration: wavy;
+          text-decoration: wavy;
+}
+html main div,
+html main section,
+body main div,
+body main section {
+  background-color: var(--accent-color) !important;
+  color: inherit;
+}
+html div,
+body div {
+  background-color: var(--base-color) !important;
+}
+html div h1,
+html div h2,
+html div h3,
+html div h4,
+html div h5,
+html div h6,
+body div h1,
+body div h2,
+body div h3,
+body div h4,
+body div h5,
+body div h6 {
+  color: var(--font-color) !important;
+  text-decoration: underline !important;
+}
+html div > *:not(button),
+body div > *:not(button) {
+  color: var(--font-color) !important;
+}
+html div a,
+body div a {
+  -webkit-text-decoration: wavy;
+          text-decoration: wavy;
+}
+html nav,
+body nav {
+  background-color: var(--accent-color) !important;
+  color: inherit;
+}
+html article,
+body article {
+  background-color: var(--button-color) !important;
+}
+html article > * :not(button):not(pre):not(code),
+body article > * :not(button):not(pre):not(code) {
+  background-color: var(--button-color) !important;
+  color: var(--button-text-color) !important;
+}
+html article,
+body article {
+  border-radius: var(--radius) !important;
+}
+html,
+body {
+  /* COMPONENTS */
+}
+html button,
+body button {
+  background-color: var(--button-color) !important;
+  color: var(--button-text-color) !important;
+  border-radius: var(--radius) !important;
+}
+html ul,
+html ol,
+html input,
+html form,
+body ul,
+body ol,
+body input,
+body form {
+  background-color: var(--accent-color) !important;
+  color: inherit;
+  border-radius: var(--radius);
+}
+html code, html pre,
+body code,
+body pre {
+  background-color: var(--accent-color) !important;
+  color: inherit;
+}/*# sourceMappingURL=styles.css.map */

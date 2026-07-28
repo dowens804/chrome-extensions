@@ -1,0 +1,43 @@
+
+@mixin setHeading($text){
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: var($text) !important;
+        text-decoration: underline !important;
+    }
+}
+
+@mixin setBaseColor($color, $text){
+    background-color: var($color) !important;
+    @include setHeading($text);
+
+    & > *:not(button) {
+        color: var($text) !important;
+    }
+
+    a {
+        text-decoration: wavy;
+    }
+}
+
+@mixin setButtonColor($color, $text){
+    background-color: var( $color) !important;
+    color: var($text) !important;
+}
+
+@mixin setComponentColor($color, $text) {
+    background-color: var($color) !important;
+    & > * :not(button):not(pre):not(code) {
+        background-color: var($color) !important;
+        color: var($text) !important;
+    }
+}
+
+@mixin setAccentColor($color) {
+    background-color: var($color) !important;
+    color: inherit;
+}

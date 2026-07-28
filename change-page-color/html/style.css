@@ -1,0 +1,13 @@
+body{
+    color: black;
+    background-color: blanchedalmond;
+    
+    ul{
+        display: flex;
+    }
+
+    button{
+        border-radius: 25px;
+    }
+}
+
